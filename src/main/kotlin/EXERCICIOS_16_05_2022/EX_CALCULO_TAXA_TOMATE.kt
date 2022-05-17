@@ -35,8 +35,6 @@ fun main() {
     var multa: Float = 4.0f
     var multaTotal: Float = 0.0f
 
-    // Por que algumas ficam azuis e outras não?
-
     println("Digite o peso de tomates em Kg")
     pesoTomate = readln()!!.toFloat()
     if (pesoTomate > limite) {
