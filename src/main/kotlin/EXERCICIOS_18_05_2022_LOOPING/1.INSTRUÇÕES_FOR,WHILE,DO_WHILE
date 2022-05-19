@@ -1,0 +1,10 @@
+FUNÇÃO ENQUANTO - (WHILE)
+  while(condição){código a ser executado}
+
+FUNÇÃO FAZER ENQUANTO - (DO WHILE)
+   do{bloco de código que vai ser executado ao menos uma vez}while(condição)
+
+FUNÇÃO PARA - (FOR)
+   for(i in 10..20){codigo enquanto range não é finalizado}
+   for(i in 10..20 step 2) -  (PARA PULAR DE DOIS EM DOIS)
+   for(i in 10 downTo 1) - (PARA FAZER DE MODO REVERSO)

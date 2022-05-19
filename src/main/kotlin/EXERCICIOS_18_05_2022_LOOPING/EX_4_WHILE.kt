@@ -1,3 +1,4 @@
+package EXERCICIOS_18_05_2022_LOOPING
 fun main(){
 
     //Uma empresa desenvolveu uma pesquisa para saber as características
@@ -13,7 +14,6 @@ fun main(){
     // o número de pessoas nervosas com mais de 40 anos;
     // o número de pessoas calmas com menos de 18 anos.
 
-
     var cont = 0
     var idade = 0
     var sexo = 0
@@ -27,33 +27,33 @@ fun main(){
 
     while(cont<5){
 
-        println("Pessoa ${cont+1}")
+    println("Pessoa ${cont+1}")
 
-        println("Digite sua idade")
-        idade = readln().toInt()
+    println("Digite sua idade")
+    idade = readln().toInt()
 
-        println("Digite o sexo  (1-feminino / 2-masculino / 3-Outros)")
-        sexo = readln().toInt()
+    println("Digite o sexo  (1-feminino / 2-masculino / 3-Outros)")
+    sexo = readln().toInt()
 
-        println("Digite o comportamento  (1-calma / 2-nervosa / 3-agressiva)")
-        opcao = readln().toInt()
-        if(opcao == 1){
-            pCalmas++}
-        if(sexo == 1 && opcao == 2){
-            mNerv++}
-        if(sexo == 2 && opcao == 3){
-            hAgr++}
-        if(sexo == 3 && opcao == 1){
-            outCalmos++ }
-        if(opcao == 3 && idade > 40){
-            pNM40++}
-        if(opcao == 1 && idade < 18){
-            pCM18++}
-    }
+    println("Digite o comportamento  (1-calma / 2-nervosa / 3-agressiva)")
+    opcao = readln().toInt()
+    if(opcao == 1){
+        pCalmas++}
+    if(sexo == 1 && opcao == 2){
+        mNerv++}
+    if(sexo == 2 && opcao == 3){
+        hAgr++}
+    if(sexo == 3 && opcao == 1){
+        outCalmos++ }
+    if(opcao == 3 && idade > 40){
+        pNM40++}
+    if(opcao == 1 && idade < 18){
+        pCM18++}
+}
     println("O número de pessoas calmas é: $pCalmas" +
-            "O número de mulheres nervosas: $mNerv" +
-            "O número de homens agressivos;$hAgr" +
-            "O número de outros calmos é: $outCalmos" +
-            "O número de pessoas nervosas com mais de 40 anos é: $pNM40" +
-            "O número de pessoas calmas com menos de 18 anos é: $pCM18")
+    "O número de mulheres nervosas: $mNerv" +
+    "O número de homens agressivos;$hAgr" +
+    "O número de outros calmos é: $outCalmos" +
+    "O número de pessoas nervosas com mais de 40 anos é: $pNM40" +
+    "O número de pessoas calmas com menos de 18 anos é: $pCM18")
 }
