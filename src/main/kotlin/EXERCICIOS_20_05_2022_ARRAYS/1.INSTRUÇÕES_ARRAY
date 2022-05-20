@@ -1,0 +1,139 @@
+
+
+ESTRUTURA DO ARRAY
+val num= arrayOf(5, 6, 4, 5)
+
+ACESSAR VALOR DA ARRAY
+println(num[1])
+
+SUBSTITUIR VALOR NA ARRAY
+num[2] = 58
+
+ITERAR ENTRE ELES
+
+1° FORMA - UTILIZANDO ¨¨FOR SIMPLES¨¨
+For(i in 0 .. 4){
+println(num[i])
+
+ITERA SOBRE TODOS OS VALORES DA ARRAY
+for(i in num){
+println(i)
+}
+
+ITERA POR CADA UM DOS VALORES DA ARRAY
+num.forEach{
+println(it)
+}
+
+PARA VALORES NULOS DECLARADOS POSTERIORMENTE
+val nomes = arrayOfNulls<Strings>(1)
+nome[0] = henrrique
+nome[1] = tiago
+
+LISTA IMUTÁVEL
+list - listagem de valores tendo tamanho variável imutavel
+val nomes = listOf("henrrique", "tiago")
+
+nomes.forEach{
+println(it)
+}
+
+LISTA MUTÁVEL
+val nomes = mutableListOf<String>("henrrique" , "rodrigo")
+nomes[1] = "Tiago"
+CASO QUEIRA ADICIONAR MAIS NOMES
+nomes.add("lucas") OU nomes[3] = "lucas"
+
+EXEMPLO PRATICO
+
+while (true) {
+println("Digite alguns nomes")
+val valor = readln()
+
+if(valor != "") {
+nomes.add(valor)
+}else{
+break
+}
+}
+println(nomes)
+}
+
+REMOVER UM ITEM DA LISTA
+
+println("digite um numero a ser deletado")
+val valor = readln()
+
+nomes.remove(valor)
+println(nomes)
+
+VERIFICAR SE UM VALOR ESTÁ NA LISTA E APAGAR UM VALOR
+(Quando um valor é apagado os dados são remanejados)
+
+if(nomes.contains(valor)){
+nomes.remove(valor)
+}else{
+println(" o nome $valor não existe na lista")
+}
+println(nomes)
+}
+
+MOSTRAR TAMANHO DA ARRAY
+nomes.size
+
+MOSTRAR POSIÇÃO DO ITEM COM BASE NO SEU VALOR (index)
+pesquisa o item e mosta sua posição
+
+EDITAR UM VALOR:
+println("digite o valor que queira editar")
+val edit = readlin()
+if(nomes.contains(edit)){
+val index = nomes.indexOf(edit)
+println("diigite o novo nome")
+val valor = readln()
+nomes[index] = valor
+println(" o nome foi atualizado")
+}else{
+println("o nome nao esta na lista")
+}
+println("o tamanho da lista é : ${nomes.size}")
+println(nomes)
+}
+
+NÃO CONSIDERA VALORES DUPLICADOS  "SET"
+NESSE CASO ELE DESCONCIDERARIA O 3
+val num = mutableSetOf(1,2,3,3)
+println(num.size)
+println(num)
+
+ARMAZENAR DADOS EM PAR DE VALORES( MAP "DICIONARIO")
+(o map é construido através de chaves e valor)
+
+pair<k, v>  chave e valor
+
+val usuario = mutableMapOf(
+36 to "henrrique"
+55 to "tiago"
+89 to "lucas"
+)
+
+IMPRIMIR CHAVES
+
+usuario.forEach{
+println("${it.key} ${it.value
+ou
+valores ->("${valores.key} ${valores.value}
+val usuarios = mutableMapOf<int, string> ()
+println( "digite o ID do usuario")
+val id = readln().int()
+println("digite o nome do usuario")
+val usu = readline()
+
+usuario[id] = usu
+println(usuarios)
+
+REMOVER APARITIR DE CHAVE
+usuario.remove(chave)
+
+
+
